@@ -13,6 +13,7 @@ using namespace std;
 void sleepWrite(string text, int speed) {
     for (int i = 0; i < text.length(); i++) {
         cout << text[i];
+        // Allows the program to delay by a certain number of milliseconds
         this_thread::sleep_for(chrono::milliseconds(speed));
     }
     cout << endl;
@@ -132,7 +133,7 @@ int main() {
 
                     else{
                         sleepWrite("You leave it. Seriously, this is the most obvious item to pick up!", 25);
-                        
+                        // Checks if the user didn't pick up the light and the user didn't pick up the can based on previous choices
                         if(!light && !can){
                             sleepWrite("Pick something up already!", 25);
                         }
@@ -206,7 +207,7 @@ int main() {
                 return 0;
             }
         }
-
+        // Secret option if the user enters 2 by chance (secret ending)
         else if (choice == 2) {
             sleepWrite("You aren't ready. The time is not now. You turn around immediately, panicking for your life. You rush your way back to the car, in fear of what may lie ahead if you go through with it. But time is running out. What have you done to those who once lived there?\nYou got the secret ending 1: Leave.", 25);
             break;
