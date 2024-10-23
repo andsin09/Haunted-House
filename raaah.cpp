@@ -1,3 +1,4 @@
+
 /*
 Names: Tyler Zhang and AJ Sinha
 Program Name: Haunted House CYOA
@@ -164,7 +165,7 @@ int main() {
                     sleepWrite("You do not care for your room anymore, and decide to head back downstairs. Suddenly, a ghost of a woman in a nightgown flies at you from the wall, and you fall to the ground, hitting your head.", 25);
                 }
 
-                sleepWrite("It's a vision again, yes, but this time not overwriting your reality. It is just a memory, playing out. The woman with the broken neck is back - in the hallway. Her mouth is hung open in a scream, but nothing escapes. She follows your father, but he slams the front door shut before she can do anything. Your family is safe, in the car with you.\n A question rings out from your sibling - 'where is mother?' It's a good question, giben that the last time you saw her she was asleep in the room with your dad. She isn't in the car with you. The memory fades.", 25);
+                sleepWrite("It's a vision again, yes, but this time not overwriting your reality. It is just a memory, playing out. The woman with the broken neck is back - in the hallway. Her mouth is hung open in a scream, but nothing escapes. She follows your father, but he slams the front door shut before she can do anything. Your family is safe, in the car with you.\n A question rings out from your sibling - 'where is mother?' It's a good question, given that the last time you saw her she was asleep in the room with your dad. She isn't in the car with you. The memory fades.", 25);
                 sleepWrite("You come to. You stand up, and head back down the stairs to the first floor. You look towards the left and notice the last door to the basement, and opene it. This is the end of your return.", 25);
             
                 sleepWrite("You head down the steps and into the basement. The lights flicker before going out. It's dark. You're afraid. You turn on the flashlight, and are stunned by the surroundings. It's run down, filled with a black mold that seems to be...", 25);
@@ -195,10 +196,12 @@ int main() {
                         for(int i = 0; i < 3; i ++){
                             sleepWrite("T̴̥̗̪́̋̏̍͗͠h̸̛̩̺͖̮͎̗̍̔̌̄̌̎e̴͙̪̯̭͚̔̊̄̌͝͠͝ ̷̧̧͇͕͎̪̮̺̱̺͝h̴̢͍̥̖̠͌͒̓̓̉́͝o̶̡̢̙̖͈̫̗̲̅̎u̵̡͋̓̌̚͝s̷̩̰̟̫̩̼̫͔͖̈ė̵̢̀̅̀̈ ̴̭͓̦̲̦̼̲̦͒͆͑̈́͒̓̀͆̉ļ̷̹͙͎̹̈́̂̈́͛́͐̓̏͐͝i̴̞̓͗̎̊̊͌͆̚͝v̵̢̢̬͓̠̻̹̪̥̫̘̎̋̉̌͗́̕e̴̢̖͇͉̺̓͊͑̽͗̌̒͒̽͘͝s̷͉̭̋́͒̇̏͑͌", 0.25);
                         }
+
+                        sleepWrite("You run outside to your car, pouring all the gas you can along the way and anxiously ignite the flames, before they finally catch. The house ignites, and the fire spreads. You did it. The house is no more. You got ending 1: winning.", 25);
                     }
 
                     else if(!light){
-                        sleepWrite("You can't finish this. You have no means of lighting the flame. Your mother flies at you, and chases you back to your car. You run up the steps, but she grabs you and pulls you. You hit the floor. Everythign goes black. Death. You awaken again, but you aren't", 25);
+                        sleepWrite("You can't finish this. You have no means of lighting the flame. Your mother flies at you, and chases you back to your car. You run up the steps, but she grabs you and pulls you. You hit the floor. Everythign goes black. Death. You awaken again, but you aren't in your body. You are a spirit, looking down at the skeleton of your former body. You are trapped in the house with your mother and all those that come before. You got ending 2: trapped", 25);
                     }
                 }
             }
@@ -209,7 +212,7 @@ int main() {
         }
         // Secret option if the user enters 2 by chance (secret ending)
         else if (choice == 2) {
-            sleepWrite("You aren't ready. The time is not now. You turn around immediately, panicking for your life. You rush your way back to the car, in fear of what may lie ahead if you go through with it. But time is running out. What have you done to those who once lived there?\nYou got the secret ending 1: Leave.", 25);
+            sleepWrite("You aren't ready. The time is not now. You turn around immediately, panicking for your life. You rush your way back to the car, in fear of what may lie ahead if you go through with it. But time is running out. What have you done to those who once lived there?\nYou got the secret ending: Leave.", 25);
             break;
         }
         else {
