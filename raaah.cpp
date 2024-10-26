@@ -209,6 +209,7 @@ int main() {
                 sleepWrite("Was it fear, or was it something else entirely. You decide not to hide. You stand there, before a misty fog clouds your vision. It hurts, yes, but puts you at peace for a moment, and then darkness. A thud. YOU DIED. You got ending 3: die;", 25);
                 return 0;
             }
+            return 0;
         }
         // Secret option if the user enters 2 by chance (secret ending)
         else if (choice == 2) {
